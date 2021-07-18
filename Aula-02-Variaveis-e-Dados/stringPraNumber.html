@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+    
+      // Conseguimos converter uma String para Number de 3 formas. Veja:
+      
+      // Transformando em número real (parseFloat)
+      let dinheiro = parseFloat(prompt("Digite um número"));
+      
+      alert(`Esse valor em reais é R$${dinheiro}`);
+      
+      // Transformando em número inteiro (parseInt)
+      let realTransformado = parseInt(prompt("Digite um número real"));
+      
+      alert(`Número inteiro: ${realTransformado}`);
+      
+      // Apenas transformando em Number, sem forçar pra inteiro ou real
+      let numeroQualquer = Number(prompt("Digite qualquer número"));
+      
+      alert(`${numeroQualquer}, ${typeof numeroQualquer}`);
+      
+    </script>
+  </body>
+</html>

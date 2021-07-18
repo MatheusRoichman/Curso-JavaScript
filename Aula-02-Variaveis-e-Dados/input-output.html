@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    
+  </head>
+  <body>
+    <!-- A tag <script> serve para escrever um código JavaScript dentro do HTML. -->
+    </script>
+    <script type="text/javascript" charset="utf-8">
+      // As janelas de diálogo funcionam para receber e mostrar dados. Aparecem na página HTML.
+      
+      /*
+      Prompt: Exibe uma janela com um campo de entrada para digitação.
+      Obs: os dados recebidos no prompt são sempre String, então caso queira usar números terá que ser feita a conversão pra Number.
+      */
+      let nomeUser = prompt("Qual seu nome?");
+      
+      // Alert: Exibe uma janela com uma mensagem.
+      alert(nomeUser);
+      
+      // Confirm: Exibe uma janela de confirmação.
+      confirm(`${nomeUser} é seu nome?`);
+    </script>
+  </body>
+</html>
