@@ -1,0 +1,24 @@
+Questões Teóricas 
+
+1. O que são variáveis? Quais são as palavras-chave que usamos para declará-las? 
+
+2. Qual a diferença entre variáveis e constantes? 
+
+3. Quais são os 3 principais tipos de dados? 
+
+4. Explique o tipo de dado Boolean. 
+
+5. Qual a diferença entre Object e Array, em questão de posições? 
+
+6. Array é um valor interno de qual tipo de dado? 
+
+7. Para que serve o método typeof?
+Questões Práticas 
+
+Obs: entrada de dados deve ser feita pelo prompt e a saída pelo alert. 
+
+8. Receba 2 números, guarde em variáveis e exiba a soma dos 2 valores. 
+
+9. Receba um número inteiro, transforme ele em número real e exiba o mesmo. 
+
+10. Receba 2 números reais, some e transforme o resultado da soma em número inteiro. Após isso, exiba o valor da soma.
