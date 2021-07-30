@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <!-- HEAD - É onde ficam as informações sobre o site, configurações, conexões com outros arquivos, etc. -->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" width="device-width" initial-scale="1"/>
+    
+    <title>Meu site</title>
+  
+  <!-- CSS - Estilização dos componentes do site. -->
+  <style type="text/css" media="all">
+    * {
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      text-align: center;
+      font: 'Roboto', sans-serif;
+      background-image: url('montanha.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    
+    #cabecalho {
+      padding: 20px;
+      background-color: gray;
+      color: white;
+      width: 100vw;
+      height: 20vh;
+    }
+    
+    .box {
+      background: white;
+      padding: 20px;
+      font-size: 18px;
+      width: 50vw;
+      margin: 20px auto;
+      border-radius: 20px;
+    }
+    
+    button {
+      background: lightgray;
+      padding: 10px;
+      border: none;
+      border-radius: 15px;
+      margin-bottom: 10px;
+    }
+  </style>
+  
+  </head>
+  
+  <!-- BODY - É onde ficam os componentes do site, a parte que o usuário vê. -->
+  <body>
+    
+    <!-- As tags HTML são tratadas como objetos, e seus atributos (ex: id, class...) são as propriedades do objeto. -->
+    <div id="cabecalho">
+      <!-- Tags que estão dentro de outras são childs (filhas) destas, enquanto as tags que têm outras tags dentro delas são parents (parentes) destas. -->
+      <h1 id="nomeUser"></h1>
+      <h3 id="nascimento"></h3>
+    </div>
+    
+    <div class="box">
+      
+      <!-- O atributo onclick chama a função especificada quando houver um clique no elemento. -->
+      <button onclick="calcIMC()">Calcular IMC</button>
+      <p id="imc"></p>
+    </div>
+    
+    <script>
+      let usuario = {
+        nome: prompt("Qual é seu nome?"),
+        nasc: prompt("Qual é sua data de nascimento?")
+      };
+      
+      // O document.getElementById("id") seleciona o elemento com o id especificado.
+      document.getElementById("nomeUser").innerText = `Olá, ${usuario.nome}!`;
+      
+      // innerText é o texto que está dentro do determinado elemento.
+      document.getElementById("nascimento").innerText = usuario.nasc
+
+      const calcIMC = () => {
+        let peso = parseFloat(prompt("Digite seu peso (em kg):"));
+        let altura = parseFloat(prompt("Digite sua altura (em m):"));
+        
+        document.getElementById("imc").innerText = `Seu IMC é ${(peso / altura ** 2).toFixed(2)}`
+      }
+
+    </script>
+  </body>
+</html>
